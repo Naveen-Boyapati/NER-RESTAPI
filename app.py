@@ -1,11 +1,8 @@
 from flask import Flask,render_template,url_for,request
 import re
-import pandas as pd
 import spacy
 from spacy import displacy
 import en_core_web_sm
-import json
-from collections import defaultdict
 nlp = spacy.load('en_core_web_sm')
 
 app = Flask(__name__)
